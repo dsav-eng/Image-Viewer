@@ -8,9 +8,7 @@ This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Fast and Extensible Build System**
 
-## Quick Start & Documentation
 
-[Nx Documentation](https://nx.dev/angular)
 
 
 ## Step 1 must be to install packages
