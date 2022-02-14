@@ -1,0 +1,28 @@
+<ng-container *transloco="let t">
+  <h1>{{ t('HEADING') }}</h1>
+  <h2>{{ t('SUBHEADING') }}</h2>
+  <div class="landing-page-container">
+    <div class="landing-page-container__tag-selction-selection">
+      <h3>
+        <button
+          *ngIf="
+            (getNumberOfLoads$ | async) !== MAX_LIMIT;
+            else maxLimitReached
+          "
+          ibmButton="primary"
+          (click)="loadMoreImages()"
+          class="landing-page-container__tag-selction-selection--load-more-btn"
+        >
+          {{ t('GET_MORE_FERRARI_IMAGES') }}
+        </button>
+      </h3>
+    </div>
+    <div class="landing-page-container__image-section">
+      <image-viewer-images-container></image-viewer-images-container>
+    </div>
+  </div>
+
+  <ng-template #maxLimitReached
+    ><p>{{ t('LITIT_REACHED') }}</p>
+  </ng-template>
+</ng-container>

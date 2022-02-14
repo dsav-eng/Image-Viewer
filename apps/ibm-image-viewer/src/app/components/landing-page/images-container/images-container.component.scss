@@ -1,0 +1,15 @@
+.image-display-container {
+  margin: 10px 20px;
+
+  &--image-record {
+    max-width: 260px;
+    max-height: 180px;
+    margin: 20px;
+  }
+  &--image-record:hover {
+    transform: scale(1.5);
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+}

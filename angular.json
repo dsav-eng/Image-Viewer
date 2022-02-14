@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "ibm-image-viewer": "apps/ibm-image-viewer",
+    "ibm-image-viewer-e2e": "apps/ibm-image-viewer-e2e",
+    "images-store": "libs/images-store"
+  }
+}

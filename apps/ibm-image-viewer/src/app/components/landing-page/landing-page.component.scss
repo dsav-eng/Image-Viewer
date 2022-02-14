@@ -1,0 +1,28 @@
+.landing-page-container {
+  height: 100%;
+  margin-top: 32px;
+
+  &__tag-selction-selection {
+    &--load-more-btn {
+      margin: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+
+    &__tag-selction-selection {
+      width: 30%;
+      &--load-more-btn {
+        position: fixed;
+      }
+    }
+
+    &__image-section {
+      width: 75%;
+      background-color: grey;
+    }
+  }
+}

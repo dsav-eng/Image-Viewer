@@ -1,0 +1,15 @@
+<div *transloco="let t" class="image-display-container">
+  <ibm-loading
+    *ngIf="isLoading$ | async"
+    [isActive]="true"
+    [size]="'normal'"
+    [overlay]="true"
+  ></ibm-loading>
+  <ng-container *ngFor="let image of images$ | async">
+    <img
+      src="{{ image.imgLink }}"
+      class="image-display-container--image-record"
+      alt="{{ t('PICTURE_OF_FERRARI') }}"
+    />
+  </ng-container>
+</div>

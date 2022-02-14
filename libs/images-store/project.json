@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/images-store",
+  "sourceRoot": "libs/images-store/src",
+  "prefix": "image-viewer",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/images-store"],
+      "options": {
+        "jestConfig": "libs/images-store/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/images-store/src/**/*.ts",
+          "libs/images-store/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

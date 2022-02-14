@@ -1,0 +1,8 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: end;
+  }
+}
