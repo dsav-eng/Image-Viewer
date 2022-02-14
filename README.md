@@ -23,9 +23,9 @@ Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The 
 
 ## Running unit tests
 
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+Run `nx test ibm-image-viewer` to execute the unit tests for the application via [Jest](https://jestjs.io).
 
-Run `nx affected:test` to execute the unit tests affected by a change.
+Run `nx test images-store` to execute the unit tests for the NGRX Store via [Jest](https://jestjs.io).
 
 ## Further help
 
